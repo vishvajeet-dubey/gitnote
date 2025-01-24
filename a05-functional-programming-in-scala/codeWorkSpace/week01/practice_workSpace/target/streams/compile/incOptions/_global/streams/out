@@ -1,0 +1,10 @@
+[debug] Created transactional ClassFileManager with tempDir = E:\gitnote\a08-functional-programming-in-scala\codeWorkSpace\week01\practice_workSpace\target\scala-2.13\classes.bak
+[debug] About to delete class files:
+[debug] We backup class files:
+[debug] Created transactional ClassFileManager with tempDir = E:\gitnote\a08-functional-programming-in-scala\codeWorkSpace\week01\practice_workSpace\target\scala-2.13\classes.bak
+[debug] About to delete class files:
+[debug] We backup class files:
+[debug] Registering generated classes:
+[debug] 	squareRoot$.class
+[debug] 	squareRoot.class
+[debug] Removing the temporary directory used for backing up class files: E:\gitnote\a08-functional-programming-in-scala\codeWorkSpace\week01\practice_workSpace\target\scala-2.13\classes.bak

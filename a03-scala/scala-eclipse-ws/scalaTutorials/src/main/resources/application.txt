@@ -1,0 +1,6 @@
+dev.name=vishvajeet dubey
+about= This project is created as maven project so while importing please make to import in same.
+maven.version=4.0.0
+scala.version=2.12.3
+java.version=J2SE-1.5 / java version "1.8.0_411"
+git.repo=gitnote
