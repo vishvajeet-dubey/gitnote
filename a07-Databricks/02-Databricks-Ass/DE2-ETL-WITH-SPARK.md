@@ -17,12 +17,20 @@ Make special note of the use of back-ticks (not single quotes) around the path.
 **1. USING VIEW**  
 ```sql
 CREATE OR REPLACE VIEW event_view
-AS SELECT * FROM json.`${DA.paths.kafka_events}`
+AS SELECT * FROM json.`path`
 ```
 
 
 **2. USING TEMP VIEW**: Temporary views similarly alias queries to a name that's easier to reference in later queries. It exists only for the current SparkSession. On Databricks, this means they are isolated to the current notebook, job, or DBSQL query.  
 ```sql
 CREATE OR REPLACE TEMP VIEW events_temp_view
-AS SELECT * FROM json.`${DA.paths.kafka_events}`
+AS SELECT * FROM json.`path`
+```
+
+### Apply CTEs for Reference within a Query
+Common table expressions (CTEs) are perfect when you want a short-lived, human-readable reference to the results of a query.
+```sql
+WITH cte_table
+AS (SELECT * FROM json.`path`)
+SELECT * FROM cte_table
 ```
