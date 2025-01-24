@@ -3,7 +3,7 @@
 
 ---
 
-## 2-1-Querying-Files-Directly
+# 2-1-Querying-Files-Directly
 To query the data contained in a single file, execute the query with the following pattern:  
 
 ```sql
@@ -34,3 +34,16 @@ WITH cte_table
 AS (SELECT * FROM json.`path`)
 SELECT * FROM cte_table
 ```
+
+
+### Load Text file
+When working with text-based files (which include JSON, CSV, TSV, and TXT formats), you can use the **`text`** format to load each line of the file as a row with one string column named **`value`**.  
+```sql
+SELECT * FROM text.`path` -- loading text file
+
+SELECT * FROM binaryFile.`${DA.paths.kafka_events}` -- loading binary file
+```
+
+---
+
+# 
