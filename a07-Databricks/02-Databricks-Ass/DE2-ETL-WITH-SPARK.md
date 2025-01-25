@@ -69,7 +69,7 @@ LOCATION = path
 
 #### II. Creating temp view from CSV file
 ```sql
-CREATE TEMP VIEW view_name
+CREATE OR REPLACE TEMP VIEW view_name
 USING CSV
 OPTIONS (
   header = "true",
@@ -112,4 +112,17 @@ OPTIONS (
     user = "{jdbcUsername}",
     password = "{jdbcPassword}"
 )
+
+-- CREATING TEMP VIEW FOR ACCESS TABLE FOR CURRENT SESSION
+CREATE OR REPLACE TEMP VIEW external_table
+USING JDBC
+OPTIONS (
+  url = "jdbc:sqlite:${DA.paths.ecommerce_db}",
+  dbtable = "users"
+);
+
+-- ACCESSING TEMP VIEW
+SELECT * FROM external_table limit 5;
 ```
+
+
