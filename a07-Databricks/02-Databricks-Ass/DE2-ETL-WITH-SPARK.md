@@ -78,3 +78,16 @@ OPTIONS (
 
 Same query we can submit using spark.sql("query")  
 
+>[!warning]
+>If you are using the external data source then you have to refresh the table data in-order to reflect the current data
+
+#### Saving data as CSV file
+```python
+(spark.read
+      .option("header", "true")
+      .option("delimiter", "|")
+      .csv("source_file_name_with_absolute_path")
+      .write.mode("append")
+      .format("csv")
+      .save("target_path_with_file_name", header="true"))
+```
