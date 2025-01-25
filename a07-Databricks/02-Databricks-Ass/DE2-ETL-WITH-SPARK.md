@@ -47,3 +47,4 @@ SELECT * FROM binaryFile.`${DA.paths.kafka_events}` -- loading binary file
 ---
 
 # 2-2-External-Sources
+## CS

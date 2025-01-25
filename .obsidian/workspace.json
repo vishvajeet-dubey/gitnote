@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "a11-Databricks/02-Databricks-Ass/DE2-ETL-WITH-SPARK.md"
+                "file": "a07-Databricks/02-Databricks-Ass/DE2-ETL-WITH-SPARK.md"
               },
               "icon": "lucide-list",
               "title": "Outline of DE2-ETL-WITH-SPARK"
@@ -170,8 +170,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5,
-    "collapsed": true
+    "width": 203.5
   },
   "left-ribbon": {
     "hiddenItems": {
