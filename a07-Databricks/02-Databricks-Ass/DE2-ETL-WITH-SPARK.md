@@ -57,3 +57,24 @@ select * from csv.`file_path`;
 > [!NOTE]
 > When above query not return the desire result then we can use the below option using delimiter option
 
+#### Creating table from CSV file
+```sql
+CREATE TABLE table_identifier (col_name1 col_type1, ...)
+USING data_source
+OPTIONS (key1 = val1, key2 = val2, ...)
+LOCATION = path
+```
+
+#### Creating temp view from CSV file
+```sql
+CREATE TEMP VIEW view_name
+USING CSV
+OPTIONS (
+  header = "true",
+  delimiter = "|",
+  path = "path_name"
+);
+```
+
+Same query we can submit using spark.sql("query")  
+
