@@ -54,5 +54,6 @@ select * from csv.`file_path`;
 ```
 
 
-> [!important]
+> [!IMPORTANT] NOTE
 > When above query not return the desire result then we can use the below option using delimiter option
+
