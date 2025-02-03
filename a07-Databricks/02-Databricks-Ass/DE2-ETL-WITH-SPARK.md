@@ -235,3 +235,57 @@ WHERE user_id IS NOT NULL;
 -- 917
 -- this means all null values updated
 ```
+
+```python
+(usersDF
+    .dropDuplicates(["user_id", "user_first_touch_timestamp"])
+    .filter(col("user_id").isNotNull())
+    .count())
+```
+
+#### Validate Datasets
+Based on our manual review above, we've visually confirmed that our counts are as expected.  
+We can also programmatically perform validation using simple filters and **`WHERE`** clauses.  
+Validate that the **`user_id`** for each row is unique.  
+
+```sql
+SELECT max(row_count) <= 1 no_duplicate_ids FROM (
+  SELECT user_id, count(*) AS row_count
+  FROM deduped_users
+  GROUP BY user_id)
+
+-- no_duplicate_ids
+-- true
+```
+
+```python
+from pyspark.sql.functions import count
+
+display(dedupedDF
+    .groupBy("user_id")
+    .agg(count("*").alias("row_count"))
+    .select((max("row_count") <= 1).alias("no_duplicate_ids")))
+```
+
+Confirm that each email is associated with at most one **`user_id`**.
+
+```sql
+SELECT max(user_id_count) <= 1 at_most_one_id FROM (
+  SELECT email, count(user_id) AS user_id_count
+  FROM deduped_users
+  WHERE email IS NOT NULL
+  GROUP BY email);
+-- true
+```
+
+```python
+
+display(dedupedDF
+    .where(col("email").isNotNull())
+    .groupby("email")
+    .agg(count("user_id").alias("user_id_count"))
+    .select((max("user_id_count") <= 1).alias("at_most_one_id")))
+# true
+```
+
+### C. Date Format and Regex
