@@ -1,7 +1,8 @@
 # CONTENT
 - [2-1-Querying-Files-Directly](#2-1-Querying-Files-Directly)
 - [2-2-External-Sources](#2-2-External-Sources)
-
+- [2-3-Extract-Data-Lab](#2-3-Extract-Data-Lab)
+- [2-4-Cleaning-Data](#2-4-Cleaning-Data)
 
 ---
 
@@ -289,3 +290,33 @@ display(dedupedDF
 ```
 
 ### C. Date Format and Regex
+Now that we've removed null fields and eliminated duplicates, we may wish to extract further value out of the data.
+
+The code below:  
+- Correctly scales and casts the **`user_first_touch_timestamp`** to a valid timestamp
+- Extracts the calendar date and clock time for this timestamp in human readable format
+- Uses **`regexp_extract`** to extract the domains from the email column using regex
+
+```sql
+SELECT *, 
+  date_format(first_touch, "MMM d, yyyy") AS first_touch_date,
+  date_format(first_touch, "HH:mm:ss") AS first_touch_time,
+  regexp_extract(email, "(?<=@).+", 0) AS email_domain
+FROM (
+  SELECT *,
+    CAST(user_first_touch_timestamp / 1e6 AS timestamp) AS first_touch 
+  FROM deduped_users
+)
+```
+
+```python
+from pyspark.sql.functions import date_format, regexp_extract
+
+display(dedupedDF
+    .withColumn("first_touch", (col("user_first_touch_timestamp") / 1e6).cast("timestamp"))
+    .withColumn("first_touch_date", date_format("first_touch", "MMM d, yyyy"))
+    .withColumn("first_touch_time", date_format("first_touch", "HH:mm:ss"))
+    .withColumn("email_domain", regexp_extract("email", "(?<=@).+", 0))
+)
+```
+
