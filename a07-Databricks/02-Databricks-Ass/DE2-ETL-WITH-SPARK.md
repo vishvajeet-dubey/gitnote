@@ -130,4 +130,34 @@ SELECT * FROM external_table limit 5;
 
 
 # 2-4-Cleaning-Data
-Many standard SQL query commands **(e.g. DISTINCT, WHERE, GROUP BY, etc.)** are available in Spark SQL to express transformations.
+As we inspect and clean our data, we'll need to construct various column expressions and queries to express transformations to apply on our dataset.  
+Many standard SQL query commands **(e.g. DISTINCT, WHERE, GROUP BY, etc.)** are available in Spark SQL to express transformations.  
+
+### Data Overview
+We'll work with new users records from the **`users_dirty`** table, which has the following schema:
+
+| field                      | type      | description                                                           |
+| -------------------------- | --------- | --------------------------------------------------------------------- |
+| user_id                    | string    | unique identifier                                                     |
+| user_first_touch_timestamp | long      | time at which the user record was created in microseconds since epoch |
+| email                      | string    | most recent email address provided by the user to complete an action  |
+| updated                    | timestamp | time at which this record was last updated                            |
+
+Let's start by counting values in each field of our data.   
+
+Below is the CSV file for dataset:  
+![user_dataset](resource/DE_2_4_User_dirty.csv)  
+
+
+```sql
+SELECT count(*), count(user_id), count(user_first_touch_timestamp), count(email), count(updated)
+FROM users_dirty;
+```
+
+Output:  
+
+| count(1) | count(user_id) | count(user_first_touch_timestamp) | count(email) | count(updated) |
+| -------- | -------------- | --------------------------------- | ------------ | -------------- |
+| 986      | 983            | 983                               | 138          | 983            |
+
+- 
