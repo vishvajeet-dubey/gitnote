@@ -130,3 +130,4 @@ SELECT * FROM external_table limit 5;
 
 
 # 2-4-Cleaning-Data
+Many standard SQL query commands **(e.g. DISTINCT, WHERE, GROUP BY, etc.)** are available in Spark SQL to express transformations.

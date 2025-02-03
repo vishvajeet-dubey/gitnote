@@ -187,8 +187,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d108c8d23b6605ca",
+  "active": "cbdc07cc39c6679e",
   "lastOpenFiles": [
+    "a07-Databricks/02-Databricks-Ass/resource",
+    "a07-Databricks/02-Databricks-Ass/resource/DE_2_4_User_dirty.csv",
     "a07-Databricks/01-Databricks-Fun/Databricks Fundamentals.md",
     "a07-Databricks/02-Databricks-Ass/DE2-ETL-WITH-SPARK.md",
     "a07-Databricks/02-Databricks-Ass/Delta Lake.md",
@@ -232,9 +234,7 @@
     "a06-setup-guide/linkedin-profile-opt/LinkedIn Profile Optimization.md",
     "a00-private-note/a01-task-management/a02-other-note/a02-scala-spark-learning-plan.md",
     "a00-private-note/a03-Interview-que/Scala Interview Question.md",
-    "a00-private-note/a03-Interview-que/Python Interview Que for Data Engineers.md",
     "a06-setup-guide/linkedin-profile-opt",
-    "a04-spark/scalaMavenPro/target/scalaMavenPro.jar",
-    "a04-spark/scalaMavenPro/target/classes/org/learning/Main.class"
+    "a04-spark/scalaMavenPro/target/scalaMavenPro.jar"
   ]
 }
