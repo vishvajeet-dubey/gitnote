@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "DE2-ETL-WITH-SPARK"
             }
-          },
-          {
-            "id": "9aea5a946fc003b0",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.4"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -200,7 +187,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9aea5a946fc003b0",
+  "active": "d108c8d23b6605ca",
   "lastOpenFiles": [
     "a07-Databricks/01-Databricks-Fun/Databricks Fundamentals.md",
     "a07-Databricks/02-Databricks-Ass/DE2-ETL-WITH-SPARK.md",
