@@ -160,4 +160,27 @@ Output:
 | -------- | -------------- | --------------------------------- | ------------ | -------------- |
 | 986      | 983            | 983                               | 138          | 983            |
 
-- 
+- Based on above query looks like we have null values in our all columns
+- **Note:** Null value works incorrectly in some of the math function like `count()`
+	- `count(col)` => Skips null value when counting the specific column.
+	- `count(*)` => Count all row including null values
+- We can count the null value using below
+	- `count_if(col is null)`
+	- `count(*)` with filter for where `col is null`
+
+```sql
+SELECT count_if(email IS NULL) FROM users_dirty;
+SELECT count(*) FROM users_dirty WHERE email IS NULL;
+
+-- output
+-- count(1)
+-- 848
+```
+
+```python
+from pyspark.sql.functions import col
+usersDF = spark.read.table("users_dirty")
+
+usersDF.selectExpr("count_if(email IS NULL)")
+usersDF.where(col("email").isNull()).count()
+```
