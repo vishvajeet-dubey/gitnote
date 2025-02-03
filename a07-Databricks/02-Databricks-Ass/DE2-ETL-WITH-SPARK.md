@@ -204,4 +204,34 @@ Here, we are using the aggregate function **`max`** as a hack to:
 - Capture non-null emails when multiple records are present
 
 ```sql
+CREATE OR REPLACE TEMP VIEW deduped_users AS 
+SELECT user_id, user_first_touch_timestamp, max(email) AS email, max(updated) AS updated
+FROM users_dirty
+WHERE user_id IS NOT NULL
+GROUP BY user_id, user_first_touch_timestamp;
+
+SELECT count(*) FROM deduped_users;
+```
+
+```python
+%python
+from pyspark.sql.functions import max
+dedupedDF = (usersDF
+    .where(col("user_id").isNotNull())
+    .groupBy("user_id", "user_first_touch_timestamp")
+    .agg(max("email").alias("email"), 
+         max("updated").alias("updated"))
+    )
+
+dedupedDF.count()
+```
+
+Let's confirm that we have the expected count of remaining records after deduplicating based on distinct **`user_id`** and **`user_first_touch_timestamp`** values.  
+```sql
+SELECT COUNT(DISTINCT(user_id, user_first_touch_timestamp))
+FROM users_dirty
+WHERE user_id IS NOT NULL;
+-- "count(DISTINCT named_struct(user_id, user_id, user_first_touch_timestamp, user_first_touch_timestamp))"
+-- 917
+-- this means all null values updated
 ```
