@@ -184,3 +184,24 @@ usersDF = spark.read.table("users_dirty")
 usersDF.selectExpr("count_if(email IS NULL)")
 usersDF.where(col("email").isNull()).count()
 ```
+
+### A. Duplicate Row
+We can use the `distinct *` to remove true duplicate where entries rows contain the same values.
+```sql
+select distinct * from users_dirty;
+```
+
+```python
+# display the distinct records in pyspark df
+usersDF.distinct().display()
+```
+
+### B. Duplicate row based on specific column
+The code below uses **`GROUP BY`** to remove duplicate records based on **`user_id`** and **`user_first_touch_timestamp`** column values. (Recall that these fields are both generated when a given user is first encountered, thus forming unique tuples.)  
+
+Here, we are using the aggregate function **`max`** as a hack to:
+- Keep values from the **`email`** and **`updated`** columns in the result of our group by
+- Capture non-null emails when multiple records are present
+
+```sql
+```
