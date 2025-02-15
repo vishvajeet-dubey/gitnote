@@ -26,3 +26,12 @@
 		- Slave4 (1TB, 4 cores CPU, 8GB RAM)
 
 #### Why Apace Spark? What Problem does it solve?
+Previously we were using the Databases to load the data, like:   
+Database --> Oracle, Teradata, Exadata, MySQL server etc.   
+These data were stored in form of structured data(tabular form only).   
+
+| col1     | col2     | col3     | col4     | col5     |
+| -------- | -------- | -------- | -------- | -------- |
+| sample01 | sample02 | sample03 | sample04 | sample05 |
+
+As Data 
