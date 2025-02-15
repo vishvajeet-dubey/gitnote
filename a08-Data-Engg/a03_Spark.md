@@ -4,7 +4,7 @@
 ---
 
 # Spark-Overview
-#### What is Apache Spark?
+### What is Apache Spark?
 - Apache Spark is `unified` `computing engine` and set of libraries for p`arallel data processing` on `computer cluster`.
 - **Unified**: 
 	- Spark is designed to support wide range of task over the same computing engine.
@@ -25,7 +25,7 @@
 		- Slave3 (1TB, 4 cores CPU, 8GB RAM)
 		- Slave4 (1TB, 4 cores CPU, 8GB RAM)
 
-#### Why Apace Spark? What Problem does it solve?
+### Why Apace Spark? What Problem does it solve?
 Previously we were using the Databases to load the data, like:   
 Database --> Oracle, Teradata, Exadata, MySQL server etc.   
 These data were stored in form of structured data(tabular form only).   
@@ -34,4 +34,18 @@ These data were stored in form of structured data(tabular form only).
 | -------- | -------- | -------- | -------- | -------- |
 | sample01 | sample02 | sample03 | sample04 | sample05 |
 
-As Data 
+As Data are growing now a days not only structured form.  
+File --> Text, CSV, Image, Video   
+Semi-Structure: JSON, YAML  
+
+Since data growing we started facing the Big Data handling/processing issue:   
+
+**Big Data:** 3 v's of Big data.   
+1. **Velocity**: How fast data is growing like 1GB per Second.
+2. **Variety**: Text, JSON, YAML, Audio, Video, Image, Structured, Semi structure, unstructured
+3. **Volume**: 5GB, 10TB not big data but 10 TB per hours can be.
+
+To Solve this problem we have to can use Spark.   
+
+ETL --> Extract Transform load
+ELT --> Extract load Trans
