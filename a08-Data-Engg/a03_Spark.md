@@ -80,10 +80,19 @@ To Solve this problem we have:
 2. Spark is 100 times faster than Hadoop
 3. Spark processes data in RAM but Hadoop don't.
 
+### Difference:
 
 | Parameter       | Hadoop                                                                                                      | Spark                                                                                                                    |
 | --------------- | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | Performace      | Hadoop is slower than spark. Because it writes the dat aback to disk and read again from disk to in-memory. | Spark is faster than Hadoop because spark do all the computation in memory.                                              |
 | Batch/Streaming | Build for batch data processing                                                                             | Build for batch as well as streaming data processing.                                                                    |
 | Ease of use     | Difficult to write code in Hadoop. Hive was build to make it easier                                         | Easy to write and debug code. We have interactive shell to develop and test. Spark provides high level and low level API |
-| Security        | Uses Kerberos Authentication and ACL autherization.                                                         | Doesn't have solid security feat                                                                                         |
+| Security        | Uses Kerberos Authentication and ACL autherization.                                                         | Doesn't have solid security feature. It uses HDFS for ACL auth and Yarn for Kerberos.                                    |
+| Fault Talerance | It is having block of data and replication factor to handle the failure.                                    | Uses DAG to provide fault tolerance. (Directed Acyclic Graph)                                                            |
+|                 | ![](../Pasted%20image%2020250216013001.png)                                                                 |                                                                                                                          |
+
+![](../Pasted%20image%2020250216012949.png)  
+
+
+-----
+

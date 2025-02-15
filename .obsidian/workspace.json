@@ -221,13 +221,15 @@
         "y": 0,
         "width": 431,
         "height": 728,
-        "maximize": false,
+        "maximize": true,
         "zoom": 0
       }
     ]
   },
   "active": "92343cfe41ae0159",
   "lastOpenFiles": [
+    "Pasted image 20250216013001.png",
+    "Pasted image 20250216012949.png",
     "a08-Data-Engg/a00_Roadmap.md",
     "a08-Data-Engg/a03_Spark.md",
     "README.md",
@@ -264,7 +266,6 @@
     "a07-Databricks/resource/Pasted image 20250118072810.png",
     "a07-Databricks/resource/Pasted image 20250118111907.png",
     "Pasted image 20250118112236.png",
-    "a07-Databricks/resource/Pasted image 20250118064011.png",
     "Untitled.canvas",
     "a07-Databricks/resource",
     "a00-private-note/a03-interview/a01-Interview-que/aidetic/aidetic interview question..md",
@@ -273,7 +274,6 @@
     "a02-sql/Sql-foreign-key-notes.md",
     "a06-setup-guide/Scala.md",
     "a06-setup-guide/Installing Docker.md",
-    "a06-setup-guide/Maven Project in IntelliJ.md",
-    "a00-private-note/a01-task-management/a01-daily-note/2025-01-02.md"
+    "a06-setup-guide/Maven Project in IntelliJ.md"
   ]
 }
