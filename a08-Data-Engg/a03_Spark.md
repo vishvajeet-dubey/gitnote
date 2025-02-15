@@ -5,7 +5,7 @@
 
 # Spark-Overview
 #### What is Apache Spark?
-- Apache Spark is `unified` `computing engine` and set of libraries for p`arallel data processing` on computer cluster.
+- Apache Spark is `unified` `computing engine` and set of libraries for p`arallel data processing` on `computer cluster`.
 - **Unified**: 
 	- Spark is designed to support wide range of task over the same computing engine.
 	- For Ex - Data Scientist, Data Analyst and Data Engineer all can use the same platform for their analysis, transformation and modelling.
