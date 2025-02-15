@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "a08-Data-Engg/a00_Roadmap.md",
+                "file": "a08-Data-Engg/a03_Spark.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "a00_Roadmap"
+              "title": "a03_Spark"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "a08-Data-Engg/a00_Roadmap.md",
+                "file": "a08-Data-Engg/a03_Spark.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of a00_Roadmap"
+              "title": "Outline of a03_Spark"
             }
           },
           {
@@ -187,11 +187,51 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cbdc07cc39c6679e",
+  "floating": {
+    "id": "c0ab051527418a0d",
+    "type": "floating",
+    "children": [
+      {
+        "id": "da7e5986ee6437fd",
+        "type": "window",
+        "children": [
+          {
+            "id": "3f423fd1994da30f",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "92343cfe41ae0159",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "a08-Data-Engg/a03_Spark.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "a03_Spark"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 935,
+        "y": 0,
+        "width": 431,
+        "height": 728,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "92343cfe41ae0159",
   "lastOpenFiles": [
+    "a08-Data-Engg/a00_Roadmap.md",
+    "a08-Data-Engg/a03_Spark.md",
     "README.md",
     "a08-Data-Engg",
-    "a08-Data-Engg/a00_Roadmap.md",
     "a00-private-note/a03-interview/a02-interview-notes/Interview-Notes.md",
     "a02-sql/sql.md",
     "a00-private-note/a01-task-management/a02-other-note/a01-notes.md",
