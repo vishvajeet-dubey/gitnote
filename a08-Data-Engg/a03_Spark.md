@@ -1,5 +1,7 @@
 # Content
 - [Spark-Overview](#Spark-Overview)
+	- [What is Apache Spark?](#What%20is%20Apache%20Spark?)
+	- [Why Apace Spark? What Problem does it solve?](#Why%20Apace%20Spark?%20What%20Problem%20does%20it%20solve?)
 
 ---
 
@@ -45,7 +47,6 @@ Since data growing we started facing the Big Data handling/processing issue:
 2. **Variety**: Text, JSON, YAML, Audio, Video, Image, Structured, Semi structure, unstructured
 3. **Volume**: 5GB, 10TB not big data but 10 TB per hours can be.
 
-To Solve this problem we have to can use Spark.   
 
 ETL --> Extract Transform Load (Early days when storing in database)   
 ELT --> Extract Load Transform (Now a days)   
@@ -67,3 +68,19 @@ To handle this we had 2 approach
 | 🛢                                       | 🖥🖥🖥🖥🖥                                                      |
 | If system fail then everything will down | If one system fail then data will process from another machine. |
 
+To Solve this problem we have:
+1. Spark (Currently in use)
+2. Hadoop (HDFS recommended)
+
+-------
+
+# Hadoop-VS-Spark
+### Misconception:
+1. Hadoop is a Database
+2. Spark is 100 times faster than Hadoop
+3. Spark processes data in RAM but Hadoop don't.
+
+
+| Parameter  | Hadoop | Spark |
+| ---------- | ------ | ----- |
+| Performace |        |       |
