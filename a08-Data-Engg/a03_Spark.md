@@ -40,12 +40,30 @@ Semi-Structure: JSON, YAML
 
 Since data growing we started facing the Big Data handling/processing issue:   
 
-**Big Data:** 3 v's of Big data.   
+#### **Big Data:** 3 v's of Big data.   
 1. **Velocity**: How fast data is growing like 1GB per Second.
 2. **Variety**: Text, JSON, YAML, Audio, Video, Image, Structured, Semi structure, unstructured
 3. **Volume**: 5GB, 10TB not big data but 10 TB per hours can be.
 
 To Solve this problem we have to can use Spark.   
 
-ETL --> Extract Transform load
-ELT --> Extract load Trans
+ETL --> Extract Transform Load (Early days when storing in database)   
+ELT --> Extract Load Transform (Now a days)   
+
+#### Issue: 
+1. Storage --> since data growing fast how we can store.
+2. Processing --> RAM and CPU   
+
+To handle this we had 2 approach
+1. Monolithic Approach: Scaling single hardware in vertical
+2. Distributed Approach: Scaling multiple hardware in horizontal.
+
+
+| Monilithic                               | Distributed                                                     |
+| ---------------------------------------- | --------------------------------------------------------------- |
+| Vertical Scaling                         | Horizontal Scaling                                              |
+| Expensive                                | Economical                                                      |
+| Low availability                         | High availability                                               |
+| 🛢                                       | 🖥🖥🖥🖥🖥                                                      |
+| If system fail then everything will down | If one system fail then data will process from another machine. |
+
