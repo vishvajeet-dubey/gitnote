@@ -89,10 +89,15 @@ To Solve this problem we have:
 | Ease of use     | Difficult to write code in Hadoop. Hive was build to make it easier                                         | Easy to write and debug code. We have interactive shell to develop and test. Spark provides high level and low level API |
 | Security        | Uses Kerberos Authentication and ACL autherization.                                                         | Doesn't have solid security feature. It uses HDFS for ACL auth and Yarn for Kerberos.                                    |
 | Fault Talerance | It is having block of data and replication factor to handle the failure.                                    | Uses DAG to provide fault tolerance. (Directed Acyclic Graph)                                                            |
-|                 | ![](../Pasted%20image%2020250216013001.png)                                                                 |                                                                                                                          |
 
-![](../Pasted%20image%2020250216012949.png)  
+**Replication Factor Image:**
+![](resource/Pasted%20image%2020250216013127.png)  
 
+**DAG Visualization:**
+![](resource/Pasted%20image%2020250216013617.png)  
+
+Links:
+- https://medium.com/plumbersofdatascience/understanding-spark-dags-b82020503444
 
 -----
 
