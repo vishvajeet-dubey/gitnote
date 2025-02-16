@@ -7,7 +7,7 @@
 
 # Spark-Overview
 ### What is Apache Spark?
-- Apache Spark is `unified` `computing engine` and set of libraries for p`arallel data processing` on `computer cluster`.
+- Apache Spark is `unified` `computing engine` and set of libraries for `parallel data processing` on `computer cluster`.
 - **Unified**: 
 	- Spark is designed to support wide range of task over the same computing engine.
 	- For Ex - Data Scientist, Data Analyst and Data Engineer all can use the same platform for their analysis, transformation and modelling.
@@ -55,7 +55,7 @@ ELT --> Extract Load Transform (Now a days)
 1. Storage --> since data growing fast how we can store.
 2. Processing --> RAM and CPU   
 
-To handle this we had 2 approach
+To handle this we have 2 approach
 1. Monolithic Approach: Scaling single hardware in vertical
 2. Distributed Approach: Scaling multiple hardware in horizontal.
 
@@ -96,7 +96,7 @@ To Solve this problem we have:
 **DAG Visualization:**   
 ![](resource/Pasted%20image%2020250216013617.png)  
 
-Links:
+Links:  
 - https://medium.com/plumbersofdatascience/understanding-spark-dags-b82020503444
 
 -----
@@ -105,3 +105,4 @@ Links:
 
 ![](resource/Pasted%20image%2020250216151557.png)
 
+ 
