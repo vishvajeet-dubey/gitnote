@@ -102,3 +102,6 @@ Links:
 -----
 
 # Spark-Architecture
+
+![](resource/Pasted%20image%2020250216151557.png)
+
