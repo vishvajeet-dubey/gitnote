@@ -90,10 +90,10 @@ To Solve this problem we have:
 | Security        | Uses Kerberos Authentication and ACL autherization.                                                         | Doesn't have solid security feature. It uses HDFS for ACL auth and Yarn for Kerberos.                                    |
 | Fault Talerance | It is having block of data and replication factor to handle the failure.                                    | Uses DAG to provide fault tolerance. (Directed Acyclic Graph)                                                            |
 
-**Replication Factor Image:**
+**Replication Factor Image:**   
 ![](resource/Pasted%20image%2020250216013127.png)  
 
-**DAG Visualization:**
+**DAG Visualization:**   
 ![](resource/Pasted%20image%2020250216013617.png)  
 
 Links:
@@ -101,3 +101,4 @@ Links:
 
 -----
 
+# Spark-Architecture
