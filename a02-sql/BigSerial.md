@@ -78,7 +78,7 @@ CREATE TABLE test.students (
     class VARCHAR(100) NOT NULL
 );
 
--- inserting sample record, as id is bigserial no no
+-- inserting sample record, as id is bigserial no need to pass the value while inserting it will auto increment.
 INSERT INTO test.students (name, class) VALUES 
 ('Alice Johnson', 'Mathematics'),
 ('Bob Smith', 'Physics'),
@@ -93,9 +93,37 @@ INSERT INTO test.students (name, class) VALUES
 
 
 select * from test.students;
+
 select max(id) from test.students; -- checking max value
+
 select pg_get_serial_sequence('test.students', 'id') --get the sequence_name using this query
+
 select last_value from test.students_id_seq; --last value
+
 select setval('test.students_id_seq', (select max(id)+1 from test.students)); --updating the sequence_number
+
 select nextval('test.students_id_seq'); -- next increment value
+```
+
+
+### SYNTAX
+```sql
+ -- get the sequence_name using this query
+ -- it will return sequence name
+select pg_get_serial_sequence('schema_name.table_name', 'bigserial_col_name');
+
+
+-- last value
+-- give the sequence name without any quote
+select last_value from sequence_name; -- sequence name can get via above query
+
+
+-- updating the sequence_number
+-- default --> true --> sequence will start from number + 1; not needed to give
+-- false --> sequence will start from number
+select setval('sequence_name', number, true/false);
+
+
+-- next increment value
+select nextval('sequence_name');
 ```
