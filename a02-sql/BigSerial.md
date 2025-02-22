@@ -1,5 +1,13 @@
 # Content
-- 
+- [Overview](#Overview)
+- [1-What-is-BIGINT](#1-What-is-BIGINT)
+	- [Key-Characteristics-of-BIGINT](#Key-Characteristics-of-BIGINT)
+- [2-What-is-BIGSERIAL](#2-What-is-BIGSERIAL)
+	- [Key-Characteristics-of-BIGSERIAL](#Key-Characteristics-of-BIGSERIAL)
+- [3-What-is-a-Sequence-in-PostgreSQL](#3-What-is-a-Sequence-in-PostgreSQL)
+	- [Key-Characteristics-of-Sequences](#Key-Characteristics-of-Sequences)
+	- [SYNTAX](#SYNTAX)
+
 
 ----
 
