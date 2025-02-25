@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "a00-private-note/a03-interview/a01-Interview-que/Introduction and frequent questions.md",
+                "file": "a02-sql/sql.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduction and frequent questions"
+              "title": "sql"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "a00-private-note/a03-interview/a01-Interview-que/Introduction and frequent questions.md",
+                "file": "a02-sql/sql.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Introduction and frequent questions"
+              "title": "Outline of sql"
             }
           },
           {
@@ -189,11 +189,12 @@
   },
   "active": "d108c8d23b6605ca",
   "lastOpenFiles": [
+    "a02-sql/Sql-foreign-key-notes.md",
+    "a02-sql/sql.md",
+    "a00-private-note/a03-interview/a01-Interview-que/Introduction and frequent questions.md",
     "a00-private-note/a03-interview/a01-Interview-que/aidetic/aidetic interview question..md",
     "a00-private-note/a03-interview/a02-interview-notes/Interview-Notes.md",
     "a02-sql/BigSerial.md",
-    "a02-sql/Sql-foreign-key-notes.md",
-    "a02-sql/sql.md",
     "a08-Data-Engg/a03_Spark.md",
     "a08-Data-Engg/a03_Spark/a01_read_data.ipynb",
     "a08-Data-Engg/a03_Spark/Untitled.ipynb",
@@ -224,7 +225,6 @@
     "a07-Databricks/01-Databricks-Fun/Databricks Fundamentals.md",
     "a07-Databricks/02-Databricks-Ass/Delta Lake.md",
     "a03-scala/a02-Control-Structure-and-Collection.md",
-    "a00-private-note/a03-interview/a01-Interview-que/Introduction and frequent questions.md",
     "a03-scala/a01-scala-basic.md",
     "a01-big-data/big-data-note.md",
     "a07-exclidraw/ITR-2024.md",
