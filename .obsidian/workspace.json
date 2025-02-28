@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "a08-Data-Engg/a03_Spark.md",
+                "file": "a08-Data-Engg/a00_Roadmap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "a03_Spark"
+              "title": "a00_Roadmap"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "a08-Data-Engg/a03_Spark.md",
+                "file": "a08-Data-Engg/a00_Roadmap.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of a03_Spark"
+              "title": "Outline of a00_Roadmap"
             }
           },
           {
@@ -226,8 +226,9 @@
       }
     ]
   },
-  "active": "73be332b3a97c7d5",
+  "active": "d108c8d23b6605ca",
   "lastOpenFiles": [
+    "a08-Data-Engg/a03_Spark.md",
     "Pasted image 20250228080431.png",
     "a02-sql/sql.md",
     "a02-sql/BigSerial.md",
@@ -235,7 +236,6 @@
     "a00-private-note/a03-interview/a01-Interview-que/Introduction and frequent questions.md",
     "a00-private-note/a03-interview/a01-Interview-que/aidetic/aidetic interview question..md",
     "a00-private-note/a03-interview/a02-interview-notes/Interview-Notes.md",
-    "a08-Data-Engg/a03_Spark.md",
     "a08-Data-Engg/a03_Spark/a01_read_data.ipynb",
     "a08-Data-Engg/a03_Spark/Untitled.ipynb",
     "a08-Data-Engg/a03_Spark",
@@ -250,7 +250,6 @@
     "a08-Data-Engg/resource/Pasted image 20250216013127.png",
     "Pasted image 20250216012949.png",
     "Pasted image 20250216013014.png",
-    "Pasted image 20250216013001.png",
     "a08-Data-Engg/a00_Roadmap.md",
     "README.md",
     "a08-Data-Engg",
