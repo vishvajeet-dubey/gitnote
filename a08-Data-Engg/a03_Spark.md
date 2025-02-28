@@ -100,7 +100,11 @@ Links:
 - https://medium.com/plumbersofdatascience/understanding-spark-dags-b82020503444
 
 -----
+# Spark-Ecosystem
 
+
+
+--------
 # Spark-Architecture
 
 ![](resource/Pasted%20image%2020250216151557.png)
