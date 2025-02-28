@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "a08-Data-Engg/a00_Roadmap.md",
+                "file": "a08-Data-Engg/a03_Spark.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of a00_Roadmap"
+              "title": "Outline of a03_Spark"
             }
           },
           {
@@ -226,8 +226,9 @@
       }
     ]
   },
-  "active": "d108c8d23b6605ca",
+  "active": "73be332b3a97c7d5",
   "lastOpenFiles": [
+    "a08-Data-Engg/a00_Roadmap.md",
     "a08-Data-Engg/a03_Spark.md",
     "Pasted image 20250228080431.png",
     "a02-sql/sql.md",
@@ -250,7 +251,6 @@
     "a08-Data-Engg/resource/Pasted image 20250216013127.png",
     "Pasted image 20250216012949.png",
     "Pasted image 20250216013014.png",
-    "a08-Data-Engg/a00_Roadmap.md",
     "README.md",
     "a08-Data-Engg",
     "a00-private-note/a01-task-management/a02-other-note/a01-notes.md",
